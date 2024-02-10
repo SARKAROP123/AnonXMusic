@@ -5,7 +5,6 @@ from pyrogram.enums import ChatType, ChatMemberStatus
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import ChatPermissions
 from AnonXMusic import app
-from AnonXMusic.utils.vip_ban import admin_filter
 
 
 SPAM_CHATS = []
