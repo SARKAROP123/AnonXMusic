@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 # vc on
 @app.on_message(filters.video_chat_started)
 async def brah(_, msg):
-    await msg.reply("**😍ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ🥳**")
+    await msg.reply("** 😍ᴠɪᴅᴇᴏ ᴄʜᴀᴛ sᴛᴀʀᴛᴇᴅ🥳 **")
 
 # vc off
 @app.on_message(filters.video_chat_ended)
@@ -21,7 +21,7 @@ async def brah3(app: app, message: Message):
     x = 0
     for user in message.video_chat_members_invited.users:
         try:
-            text += f"[{user.first_name}](tg://user?id={user.id}) "
+            text += f"[{user.first_name}] (tg://user?id={user.id}) "
             x += 1
         except Exception:
             pass
